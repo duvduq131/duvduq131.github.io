@@ -1,0 +1,100 @@
+
+.section{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+.img-container{
+    display: flex;
+}
+.section img{
+    height: 350px;
+    width: auto;
+    /* margin-left: 100px; */
+
+}
+.img-container h2{
+    font-size: 3rem;
+ 
+}
+.img-container .nd-container{
+    font-size: 20px;
+    /* margin-left: 35px; */
+}
+
+.nd-container .btn{
+    background-color: rgb(67, 194, 67);
+    font-size: 18px;
+    height: 40px;
+    width: 130px;
+    border-radius: 0.6rem;
+    color: aliceblue;
+}
+.nd-container .btn:hover{
+    background-color: green;
+}
+
+.nd-container .btn2{
+    background-color: rgb(252, 0, 0);
+    font-size: 18px;
+    height: 40px;
+    width: 130px;
+    border-radius: 0.6rem;
+    color: aliceblue;
+}
+.nd-container .btn2:hover{
+    background-color: rgb(244, 94, 94);
+}
+.form-box{
+    flex-wrap: wrap;
+    width: 33%;
+    height: 450px;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    padding: 23px;
+    box-sizing: border-box;
+    border: 1px solid #696565;
+}
+.form-box h2{
+    font-size: 2.9rem;
+}
+.form-box p{
+    font-size: 1.6rem;
+}
+.form-box h3{
+    font-size: 1.8rem;
+}
+.form-box .nhap{
+    font-size: 1.8rem;
+    height: 40px;
+    width: 90%;
+    border: 1px solid var(--black);
+    margin-top: 3px;
+    border-radius: 0.5rem;
+}
+.form-box .btn{
+    font-size: 19px;
+    height: 34px;
+    color: aliceblue;
+    width: 75%;
+    border-radius: 2rem;
+    text-align: center;
+    margin-right: 40px;
+    background-color: rgb(226, 170, 106);
+}
+.form-box .btn:hover{
+    background-color: rgb(236, 176, 64);
+}
+.mota-container{
+    margin-left: 200px;
+    margin-right: 190px;
+}
+.mota-container h3{
+    font-size: 35px;
+}
+.mota-container p{
+    font-size: 20px;
+    margin-top: 14px;
+
+}
+

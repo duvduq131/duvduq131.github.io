@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadAnyWhere</title>
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="book.css">
+
+</head>
+
+<body>
+    <!-- CREATION NAVBAR -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <h1 class="logoName">ReadAnyWhere </h1>
+        </div>
+        <!-- nav thanh điều hướng -->
+        <nav class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="index.html#blogs">Giới thiệu</a>
+
+            <ul id="theloai_menu" style="font-size: 15px;">
+              <li>
+                <a href="#book">Thể loại</a>
+              
+                  <!-- <ul class="sub_menu" style="margin-top: 210px;
+              margin-left: 125px;">
+                      <li>
+                          <a href="#tanvan" ><span style="font-size: 18px;">Tản văn</span></a>
+                      </li>
+                      <li>
+                          <a href="#khoahoc"><span style="font-size: 18px;">Khoa học</span></a>
+                      </li>
+                      <li>
+                          <a href="#trinhtham"><span style="font-size: 18px;">Trinh thám</span></a>
+                      </li>
+                      <li>
+                        <a href="#kynang"><span style="font-size: 18px;">Kỹ Năng</span></a>
+                    </li>
+                    <li>
+                      <a href="#kinhdi"><span style="font-size: 18px;">Kinh dị</span></a>
+                  </li>
+                  </ul> -->
+                  </ul>
+
+           <a href="#author">Tác giả</a>
+            <a href="login.html">Đăng nhập</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+    </header>
+
+    <!-- PROSE -->
+
+    <section class="book">
+      <div class="genres">
+          <b>Thể loại:</b>
+        <nav>
+          <ul>
+            <!-- <p><a href="#">Thể loại:</a></p> -->
+            <li><a href="#" id="all">Tất cả:</a></li>
+            <li><a href="#" id="tanvan">Tản văn</a></li>
+            <li><a href="#" id="khoahoc">Khoa học</a></li>
+            <li><a href="#" id="kinhdi">Kinh dị</a></li>
+            <li><a href="#" id="trinhtham">Trinh thám</a></li>
+            <li><a href="#" id="kynang">Kỹ năng</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            $('#all').click(function(){
+              // $('#bookKH, #bookKD, #bookTT, #bookKN, #bookTVV').toggle();
+                $('#tanvan').show();
+                $('#khoahoc').show();
+                $('#kinhdi').show();
+                $('#trinhtham').show();
+                $('#kynang').show();
+
+            });
+
+            $('#tanvan').click(function(){
+              $('#bookKH, #bookKD, #bookTT, #bookKN').toggle();
+                $('#khoahoc').hide();
+                $('#kynang').hide();
+                $('#kinhdi').hide();
+                $('#trinhtham').hide();
+
+            });
+
+            $('#khoahoc').click(function(){
+              $('#bookTVV, #bookKD, #bookTT, #bookKN').toggle();
+                $('#tanvan').hide();
+                $('#kinhdi').hide();
+                $('#kynang').hide();
+                $('#trinhtham').hide();
+
+            });
+            $('#kinhdi').click(function(){
+              $('#bookTVV, #bookKH, #bookTT, #bookKN').toggle();
+                $('#tanvan').hide();
+                $('#khoahoc').hide();
+                $('#trinhtham').hide();
+                $('#kynang').hide();
+
+            });
+
+            $('#trinhtham').click(function(){
+              $('#bookTVV, #bookKH, #bookKD, #bookKN').toggle();
+                $('#tanvan').hide();
+                $('#khoahoc').hide();
+                $('#kynang').hide();
+                $('#kinhdi').hide();
+            });
+
+            $('#kynang').click(function(){
+              $('#bookTVV, #bookKH, #bookTT, #bookKD').toggle();
+                $('#tanvan').hide();
+                $('#kinhdi').hide();
+                $('#trinhtham').hide();
+                $('#khoahoc').hide();
+            });
+
+        })
+
+    </script>
+
+    <section class="book" id="bookTVV">
+      <div class="sachKhoaHoc" id="tanvan">
+          <h2>Sách Tản Văn</h2>
+      </div>
+      
+        <div class="image-box3">
+          <div class="slider-container">
+             <div class="slider-wrapper">
+          <div class="image3">
+            <img src="images/prose.jpg" alt="Image 1">
+            <p style="font-size: 30px;"><b>
+              Sách Văn Học Thiếu Nhi<br> - Ơ kìa! Tuổi thơ </b></p> 
+            <span style="font-size: 20px;">(Đào Thiên An)</span><br>
+            <button class="read-button"><a href="defend.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/prose2.jpg" alt="Image 2">
+            <p style="font-size: 30px;"><b>Khi Bạn Vừa Bận Vừa Đẹp Còn... <br></b></p> 
+            <span style="font-size: 20px;">(Lương Sảng)</span><br>
+            <button class="read-button"><a href="you.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/prose3.jpg" alt="Image 3">
+            <p style="font-size: 30px;"><b>Chúng Ta Rồi Sẽ Hạnh Phúc, Theo Những...<br></b></p> 
+            <span style="font-size: 20px;">(ThảoThảo)</span><br>
+            <button class="read-button"><a href="we.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/prose4.jpg" alt="Image 4">
+            <p style="font-size: 30px;"><b>Thế Giới Rộng Lớn Lòng Người Chật Hẹp<br> </b></p> 
+            <span style="font-size: 20px;">(Dưa Hấu Hạt Tím)</span><br>
+            <button class="read-button"><a href="world.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+      
+          </div>
+          </div>
+        </div>
+      
+        <div class="image-box3">
+          <div class="slider-container">
+                  <div class="slider-wrapper">
+          <div class="image3">
+            <img src="images/prose5.png" alt="Image 1">
+            <p style="font-size: 30px;"><b>
+              Nếu biết anh sẽ là <br>người cũ   </b></p> 
+            <span style="font-size: 20px;">(Hashtag Dawn)</span><br>
+            <button class="read-button"><a href="if.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/prose6.jpg" alt="Image 2">
+            <p style="font-size: 30px;"><b> Người Hạnh Phúc Không Nhất Thiết Phải...<br> </b></p> 
+            <span style="font-size: 20px;">(Nhiều tác giả)</span><br>
+            <button class="read-button"><a href="people.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/prose7.jpg" alt="Image 3">
+            <p style="font-size: 30px;"><b>Trí Thông Minh Của Sự Tinh Tế<br></b></p> 
+            <span style="font-size: 20px;">(Tô Mạn)</span><br>
+            <button class="read-button"><a href="clever.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/prose8.jpg" alt="Image 4">
+            <p style="font-size: 30px;"><b>Thiên Tài Bên Trái, Kẻ Điên Bên Phải<br> </b></p> 
+            <span style="font-size: 20px;">(Cao Minh)</span><br>
+            <button class="read-button"><a href="genius.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+      
+          </div>
+          </div>
+        </div>
+      
+        <div class="image-box3">
+          <div class="slider-container">
+                  <div class="slider-wrapper">
+          <div class="image3">
+            <img src="images/prose9.jpg" alt="Image 1">
+            <p style="font-size: 30px;"><b>Yêu Những Điều Không Hoàn Hảo <br> </b></p> 
+            <span style="font-size: 20px;">(Hae Min)</span><br>
+            <button class="read-button"><a href="love.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/prose10.jpg" alt="Image 2">
+            <p style="font-size: 30px;"><b> Đại Dương Đen - <br>Những Câu Chuyện Từ... </b></p> 
+            <span style="font-size: 20px;">( Đặng Hoàng Giang)</span><br>
+            <button class="read-button"><a href="ocean.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/prose11.jpg" alt="Image 3">
+            <p style="font-size: 30px;"><b>Những Đêm Không Ngủ, Những Ngày Chậm Trôi <br> </b></p> 
+            <span style="font-size: 20px;">( A Crazy Mind team)</span><br>
+            <button class="read-button"><a href="night.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/prose12.jpg" alt="Image 4">
+            <p style="font-size: 30px;"><b>Có Một Ngày, Bố Mẹ Sẽ Già Đi  <br></b></p> 
+            <span style="font-size: 20px;">(Nhiều tác giả)</span><br>
+            <button class="read-button"><a href="have.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+      
+          </div>
+          </div>
+        </div>
+            
+        </section>
+
+    <!-- SCIENCE -->
+    <section class="book" id="bookKH">
+<div class="sachKhoaHoc" id="khoahoc">
+    <h2>Sách Khoa Học</h2>
+</div>
+
+  <div class="image-box3">
+    <div class="slider-container">
+            <div class="slider-wrapper">
+    <div class="image3">
+      <img src="images/100bian.webp" alt="Image 1">
+      <p style="font-size: 30px;"><b>
+        100 Bí Ẩn Đáng <br> Kinh Ngạc Về Vũ Trụ </b></p> 
+      <span style="font-size: 20px;">(Jerome Martin, Alice James)</span><br>
+      <button class="read-button"><a href="biandang.html" style="color: white;">Đọc ngay</a></button>
+    </div>
+    <div class="image3">
+      <img src="images/vutrubian.webp" alt="Image 2">
+      <p style="font-size: 30px;"><b> Vũ Trụ - Những Bí Ẩn <br> Của Không Gian</b></p> 
+      <span style="font-size: 20px;">(Manfred Baur)</span><br>
+      <button class="read-button"><a href="vutru.html" style="color: white;">Đọc ngay</a></button>
+    </div>
+    <div class="image3">
+      <img src="images/asang.webp" alt="Image 3">
+      <p style="font-size: 30px;"><b>Ánh Sáng, Âm Thanh <br> Và Điện</b></p> 
+      <span style="font-size: 20px;">(Nhiều tác giả)</span><br>
+      <button class="read-button"><a href="asang.html" style="color: white;">Đọc ngay</a></button>
+    </div>
+    <div class="image3">
+      <img src="images/nluong.webp" alt="Image 4">
+      <p style="font-size: 30px;"><b>Năng Lượng , Các Lực <br> Và Chuyển Động</b></p> 
+      <span style="font-size: 20px;">(Nhiều Tác Giả)</span><br>
+      <button class="read-button"><a href="nluong.html" style="color: white;">Đọc ngay</a></button>
+    </div>
+
+    </div>
+    </div>
+  </div>
+
+  <div class="image-box3">
+    <div class="slider-container">
+            <div class="slider-wrapper">
+    <div class="image3">
+      <img src="images/science.jpg" alt="Image 1">
+      <p style="font-size: 30px;"><b>
+      Khoa Học <br> - Trái Đất Và Vũ Trụ </b></p> 
+      <span style="font-size: 20px;">(Nhiều tác giả)</span><br>
+      <button class="read-button"><a href="earth.html" style="color: white;">Đọc ngay</a></button>
+    </div>
+    <div class="image3">
+      <img src="images/science2.jpg" alt="Image 2">
+      <p style="font-size: 30px;"><b> Khám phá khoa học<br>(Dành cho trẻ 4 – 5 tuổi)</b></p> 
+      <span style="font-size: 20px;">(Nhiều tác giả)</span><br>
+      <button class="read-button"><a href="discovery.html" style="color: white;">Đọc ngay</a></button>
+    </div>
+    <div class="image3">
+      <img src="images/science3.jpg" alt="Image 3">
+      <p style="font-size: 30px;"><b> Hiểu hết về khoa học  <br>- How Science Works </b></p> 
+      <span style="font-size: 20px;">(DK)</span><br>
+      <button class="read-button"><a href="learning.html" style="color: white;">Đọc ngay</a></button>
+    </div>
+    <div class="image3">
+      <img src="images/science4.jpg" alt="Image 4">
+      <p style="font-size: 30px;"><b> Quiz! Khoa học kì thú: <br> Sơ cấp cứu</b></p> 
+      <span style="font-size: 20px;">(Nhiều Tác Giả)</span><br>
+      <button class="read-button"><a href="quiz.html" style="color: white;">Đọc ngay</a></button>
+    </div>
+
+    </div>
+    </div>
+  </div>
+
+  <div class="image-box3">
+    <div class="slider-container">
+            <div class="slider-wrapper">
+    <div class="image3">
+      <img src="images/science5.jpg" alt="Image 1">
+      <p style="font-size: 30px;"><b>
+        Chilly Da Vinci - Sách khoa học <br>  </b></p> 
+      <span style="font-size: 20px;">(Jarrett Rutland)</span><br>
+      <button class="read-button"><a href="chilly.html" style="color: white;">Đọc ngay</a></button>
+    </div>
+    <div class="image3">
+      <img src="images/science6.jpg" alt="Image 2">
+      <p style="font-size: 30px;"><b> Khoa Học Khám Phá <br> - Dữ Liệu Lớn</b></p> 
+      <span style="font-size: 20px;">(Viktor Mayer)</span><br>
+      <button class="read-button"><a href="data.html" style="color: white;">Đọc ngay</a></button>
+    </div>
+    <div class="image3">
+      <img src="images/science7.jpg" alt="Image 3">
+      <p style="font-size: 30px;"><b>1000 Phát Minh<br> Và Khám Phá Vĩ Đại</b></p> 
+      <span style="font-size: 20px;">(Roger Bridgman)</span><br>
+      <button class="read-button"><a href="thousand.html" style="color: white;">Đọc ngay</a></button>
+    </div>
+    <div class="image3">
+      <img src="images/science8.jpg" alt="Image 4">
+      <p style="font-size: 30px;"><b> Bách Khoa Tri Thức <br> Về Khoa Học</b></p> 
+      <span style="font-size: 20px;">(Nhiều Tác Giả)</span><br>
+      <button class="read-button"><a href="encyclopaedic.html" style="color: white;">Đọc ngay</a></button>
+    </div>
+
+    </div>
+    </div>
+  </div>
+     
+  </section>
+
+  <!-- DETECTIVE -->
+
+  <section class="book" id="bookTT">
+    <div class="sachKhoaHoc" id="trinhtham">
+        <h2>Sách Trinh Thám</h2>
+    </div>
+    
+      <div class="image-box3">
+        <div class="slider-container">
+                <div class="slider-wrapper">
+        <div class="image3">
+          <img src="images/detective.jpg" alt="Image 1">
+          <p style="font-size: 30px;"><b>
+            Biện Hộ Trắng Án<br> - Truyện Trinh Thám </b></p> 
+          <span style="font-size: 20px;">(Nhiều tác giả)</span><br>
+          <button class="read-button"><a href="defend.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/detective2.jpg" alt="Image 2">
+          <p style="font-size: 30px;"><b> Khách Sạn Ba Đóa Hồng<br></b></p> 
+          <span style="font-size: 20px;">(Nhiều tác giả)</span><br>
+          <button class="read-button"><a href="hotel.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/detective3.jpg" alt="Image 3">
+          <p style="font-size: 30px;"><b>Hôn em trước đã<br> (tặng kèm bookmark)</b></p> 
+          <span style="font-size: 20px;">(Lottie Moggach)</span><br>
+          <button class="read-button"><a href="kiss.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/detective4.jpg" alt="Image 4">
+          <p style="font-size: 30px;"><b>Ghi Chép Pháp Y <br> – Những Cái Chết Bí Ẩn</b></p> 
+          <span style="font-size: 20px;">(Lưu Tiểu Huy))</span><br>
+          <button class="read-button"><a href="notes.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+    
+        </div>
+        </div>
+      </div>
+    
+      <div class="image-box3">
+        <div class="slider-container">
+                <div class="slider-wrapper">
+        <div class="image3">
+          <img src="images/detective5.jpg" alt="Image 1">
+          <p style="font-size: 30px;"><b>
+            Búp bê đang ngủ <br> + Trăng lạnh  </b></p> 
+          <span style="font-size: 20px;">(Nhiều tác giả)</span><br>
+          <button class="read-button"><a href="doll.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/detective6.jpg" alt="Image 2">
+          <p style="font-size: 30px;"><b> Ám Dạ Hành<br> (Trinh Thám Hiện Đại) </b></p> 
+          <span style="font-size: 20px;">(Nhạc Dũng)</span><br>
+          <button class="read-button"><a href="fishsoup.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/detective7.jpg" alt="Image 3">
+          <p style="font-size: 30px;"><b>Phía Sau Nghi Can X <br> (Tái Bản 2019)</b></p> 
+          <span style="font-size: 20px;">(Higashino Keigo)</span><br>
+          <button class="read-button"><a href="rearward.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/detective8.jpg" alt="Image 4">
+          <p style="font-size: 30px;"><b>Án Mạng  <br> Mười Một Chữ</b></p> 
+          <span style="font-size: 20px;">(Higashino Keigo)</span><br>
+          <button class="read-button"><a href="murder.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+    
+        </div>
+        </div>
+      </div>
+    
+      <div class="image-box3">
+        <div class="slider-container">
+                <div class="slider-wrapper">
+        <div class="image3">
+          <img src="images/detective9.jpg" alt="Image 1">
+          <p style="font-size: 30px;"><b>Hồ Sơ Số 113 <br>- Trinh Thám </b></p> 
+          <span style="font-size: 20px;">(Nhiều tác giả)</span><br>
+          <button class="read-button"><a href="document.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/detective10.jpg" alt="Image 2">
+          <p style="font-size: 30px;"><b> Ám Ảnh Đen<br> - Trinh Thám Đen </b></p> 
+          <span style="font-size: 20px;">(Cornell Woolrich)</span><br>
+          <button class="read-button"><a href="black.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/detective11.jpg" alt="Image 3">
+          <p style="font-size: 30px;"><b>Tấm Gương Hai Mặt  <br> (Trinh Thám)</b></p> 
+          <span style="font-size: 20px;">(Kim Su An)</span><br>
+          <button class="read-button"><a href="mirror.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/detective12.jpg" alt="Image 4">
+          <p style="font-size: 30px;"><b>Bãi săn người  <br> - Trinh Thám Kinh Dị</b></p> 
+          <span style="font-size: 20px;">(Nhiều tác giả)</span><br>
+          <button class="read-button"><a href="hunter.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+    
+        </div>
+        </div>
+      </div>
+          
+      </section>
+
+       <!--SKILLS -->
+
+  <section class="book" id="bookKN">
+    <div class="sachKhoaHoc" id="kynang">
+        <h2>Sách Kỹ Năng</h2>
+    </div>
+    
+      <div class="image-box3">
+        <div class="slider-container">
+                <div class="slider-wrapper">
+        <div class="image3">
+          <img src="images/skill.jpg" alt="Image 1">
+          <p style="font-size: 30px;"><b>
+            Sách Kỹ Năng<br> Giao Tiếp Đỉnh Cao </b></p> 
+          <span style="font-size: 20px;">(Lý Tử Quyên)</span><br>
+          <button class="read-button"><a href="contact.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/skill2.jpg" alt="Image 2">
+          <p style="font-size: 30px;"><b> Sách kỹ năng Đừng bận <br> mà vẫn nghèo</b></p> 
+          <span style="font-size: 20px;">(Ông Chú Tiểu Xuyên)</span><br>
+          <button class="read-button"><a href="busy.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/skill3.jpg" alt="Image 3">
+          <p style="font-size: 30px;"><b>Đọc Nhanh, Hiểu Sâu,​<br> Nhớ Lâu Trọn Đời</b></p> 
+          <span style="font-size: 20px;">(Atsushi Innami)</span><br>
+          <button class="read-button"><a href="read.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/skill4.jpg" alt="Image 4">
+          <p style="font-size: 30px;"><b>Ta Dại Ta Tìm <br> Nơi Vắng Vẻ</b></p> 
+          <span style="font-size: 20px;">(Erling Kagge)</span><br>
+          <button class="read-button"><a href="stupid.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+    
+        </div>
+        </div>
+      </div>
+    
+      <div class="image-box3">
+        <div class="slider-container">
+                <div class="slider-wrapper">
+        <div class="image3">
+          <img src="images/skill5.jpg" alt="Image 1">
+          <p style="font-size: 30px;"><b>
+            Kỹ năng quản lý  <br> dự án hiệu quả  </b></p> 
+          <span style="font-size: 20px;">(Clydebank Business)</span><br>
+          <button class="read-button"><a href="manage.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/skill6.jpg" alt="Image 2">
+          <p style="font-size: 30px;"><b>Mỗi Lần Vấp Ngã Là <br> Một Lần Trưởng Thành </b></p> 
+          <span style="font-size: 20px;">(Liêu Trí Phong)</span><br>
+          <button class="read-button"><a href="each.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/skill7.jpg" alt="Image 3">
+          <p style="font-size: 30px;"><b>Bán Hàng Cho  <br> Những Gã Khổng Lồ</b></p> 
+          <span style="font-size: 20px;">(Jill Konrath)</span><br>
+          <button class="read-button"><a href="sell.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/skill8.jpg" alt="Image 4">
+          <p style="font-size: 25px;"><b>Nóng Giận Là Bản Năng,  <br> Tĩnh Lặng Là Bản Lĩnh</b></p> 
+          <span style="font-size: 20px;">(Tống Mặc)</span><br>
+          <button class="read-button"><a href="hot.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+    
+        </div>
+        </div>
+      </div>
+    
+      <div class="image-box3">
+        <div class="slider-container">
+                <div class="slider-wrapper">
+        <div class="image3">
+          <img src="images/skill9.jpg" alt="Image 1">
+          <p style="font-size: 30px;"><b>Nghệ Thuật Bán Hàng  <br>Bằng Câu Chuyện</b></p> 
+          <span style="font-size: 20px;">(Paul Smith)</span><br>
+          <button class="read-button"><a href="artist.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/skill10.jpg" alt="Image 2">
+          <p style="font-size: 30px;"><b> Kỹ Năng Phỏng Vấn Và <br>Tuyển Dụng </b></p> 
+          <span style="font-size: 20px;">(Rob Yeung)</span><br>
+          <button class="read-button"><a href="interview.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/skill11.jpg" alt="Image 3">
+          <p style="font-size: 30px;"><b>Khi Nói Không   <br> Tôi Thấy Tội Lỗi</b></p> 
+          <span style="font-size: 20px;">(Manuel J. Smith)</span><br>
+          <button class="read-button"><a href="when.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+        <div class="image3">
+          <img src="images/detective12.jpg" alt="Image 4">
+          <p style="font-size: 30px;"><b>Cách Để Trở Thành  <br> - Cách Để Yêu 1 Người </b></p> 
+          <span style="font-size: 20px;">(Lê Quang)</span><br>
+          <button class="read-button"><a href="way.html" style="color: white;">Đọc ngay</a></button>
+        </div>
+    
+        </div>
+        </div>
+      </div>
+          
+      </section>
+
+       <!-- HORRIBLE -->
+    
+    <section class="book" id="bookKD">
+      <div class="sachKhoaHoc" id="kinhdi">
+          <h2>Sách Kinh Dị</h2>
+      </div>
+      
+        <div class="image-box3">
+          <div class="slider-container">
+                  <div class="slider-wrapper">
+          <div class="image3">
+            <img src="images/horrible.jpg" alt="Image 1">
+            <p style="font-size: 30px;"><b>
+              24 Nhân Cách Của Billy Milligan<br>  </b></p> 
+            <span style="font-size: 20px;">( Daniel Keyes)</span><br>
+            <button class="read-button"><a href="twentyfour.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/horrible2.jpg" alt="Image 2">
+            <p style="font-size: 30px;"><b>Mùa Hè Kinh Hãi - I Know What...<br></b></p> 
+            <span style="font-size: 20px;">(Lois Duncan)</span><br>
+            <button class="read-button"><a href="summer.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/prose3.jpg" alt="Image 3">
+            <p style="font-size: 30px;"><b>Sách Đồng Linh Dị Truyện Quỷ Triền Thân<br></b></p> 
+            <span style="font-size: 20px;">(Tống Ngọc)</span><br>
+            <button class="read-button"><a href="field.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/horrible4.jpg" alt="Image 4">
+            <p style="font-size: 30px;"><b>Pet Samatary - Nghĩa địa thú cưng<br> </b></p> 
+            <span style="font-size: 20px;">( Stephen King)</span><br>
+            <button class="read-button"><a href="cemetery.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+      
+          </div>
+          </div>
+        </div>
+      
+        <div class="image-box3">
+          <div class="slider-container">
+                  <div class="slider-wrapper">
+          <div class="image3">
+            <img src="images/prose5.png" alt="Image 1">
+            <p style="font-size: 30px;"><b>
+              Sét Hòn - Tử Thần Trên Sa Mạc Gobi<br>  </b></p> 
+            <span style="font-size: 20px;">(Lưu Từ Hân)</span><br>
+            <button class="read-button"><a href="rust.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/prose6.jpg" alt="Image 2">
+            <p style="font-size: 30px;"><b>Ba Hồi Kinh Dị (Truyện Kinh Dị Việt Nam)<br> </b></p> 
+            <span style="font-size: 20px;">(Thế Lữ)</span><br>
+            <button class="read-button"><a href="three.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/horrible7.jpg" alt="Image 3">
+            <p style="font-size: 30px;"><b>Truyện Đường Rừng (Truyện Kinh Dị...)<br></b></p> 
+            <span style="font-size: 20px;">(Lan Khai)</span><br>
+            <button class="read-button"><a href="manga.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/horrible8.jpg" alt="Image 4">
+            <p style="font-size: 30px;"><b>Truyện Kinh Dị Hay Rùng Mình: Dracul<br> </b></p> 
+            <span style="font-size: 20px;">( J.D. Barker, Dacre Stoker)</span><br>
+            <button class="read-button"><a href="dracul.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+      
+          </div>
+          </div>
+        </div>
+      
+        <div class="image-box3">
+          <div class="slider-container">
+                  <div class="slider-wrapper">
+          <div class="image3">
+            <img src="images/horrible9.jpg" alt="Image 1">
+            <p style="font-size: 30px;"><b>Bức Họa Múa Rối Xương (Combo tập 1+2) <br> </b></p> 
+            <span style="font-size: 20px;">( Tây Tử Tự)</span><br>
+            <button class="read-button"><a href="picture.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/horrible10.jpg" alt="Image 2">
+            <p style="font-size: 30px;"><b> Truyện kinh dị Việt Nam: Kho vàng...<br> </b></p> 
+            <span style="font-size: 20px;">( Tchya)</span><br>
+            <button class="read-button"><a href="gold.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/horrible11.jpg" alt="Image 3">
+            <p style="font-size: 30px;"><b>Truyện kinh dị Việt Nam: Vàng và máu <br> </b></p> 
+            <span style="font-size: 20px;">(Thế Lữ)</span><br>
+            <button class="read-button"><a href="blood.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+          <div class="image3">
+            <img src="images/prose12.jpg" alt="Image 4">
+            <p style="font-size: 30px;"><b>Bí Ẩn Sun Down (Tiểu Thuyết Kinh Dị)  <br></b></p> 
+            <span style="font-size: 20px;">(Nhiều tác giả)</span><br>
+            <button class="read-button"><a href="secret.html" style="color: white;">Đọc ngay</a></button>
+          </div>
+      
+          </div>
+          </div>
+        </div>
+            
+        </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer" id="contact">
+    <div class="box-container">
+        <div class="mainBox">
+            <div class="content">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+                <h1 class="logoName"> ReadAnyWhere </h1>
+            </div>
+
+            <p> ReadAnyWhere là một trang web đọc sách trực tuyến cung cấp hàng ngàn cuốn sách trên nhiều chủ đề khác nhau, từ văn học đến khoa học kỹ thuật.</p>
+
+        </div>
+        <div class="box">
+            <h3>Liên Kết Nhanh</h3>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i>Trang Chủ</a>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i>Giới Thiệu</a>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i>Thể Loại</a>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i>Tác Giả</a>
+            <a href="login.html"> <i class="fas fa-arrow-right"></i>Đăng Nhập</a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i>Liên hệ</a>
+
+
+        </div>
+        <div class="box">
+            <h3>Liên kết phụ</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i>Thông tin tài khoản</a>
+            <a href="chinhsachbaomat.html"> <i class="fas fa-arrow-right"></i>Chính sách bảo mật</a>
+            <a href="dieukhoan.html"> <i class="fas fa-arrow-right"></i>Điều khoản sử dụng</a>
+            <a href="dichvu.html"> <i class="fas fa-arrow-right"></i>Dịch vụ của chúng tôi</a>
+        </div>
+        <div class="box">
+            <h3>Thông tin liên hệ</h3>
+            <a href="#"> <i class="fas fa-phone"></i>+84 32 8421 837</a>
+            <a href="#"> <i class="fas fa-phone"></i>+84 39 5397 452</a>
+            <a href="https://www.facebook.com/wohtk161"> <i class="fas fa-envelope"></i>kimtho109@gmail.com</a>
+            <a href="#"> <i class="fas fa-envelope"></i>dungbd.22ds@vku.udn.vn</a>
+
+        </div>
+
+    </div>
+    <div class="share">
+        <a href="https://www.facebook.com/thuyvan1005" class="fab fa-facebook-f" target="_blank"></a>
+        <a href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyDMsS05XYDRgdGDwYikpzywBAEUhBf8&q=twit&rlz=1C1PDZP_enVN1051VN1051&oq=tw&aqs=chrome.1.69i57j46i131i199i340i433i465i512j46i131i199i433i465i512j46i10i131i199i433i465i650j0i131i433i650l2j0i512j5.2937j0j7&sourceid=chrome&ie=UTF-8"  target="_blank" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/tyuh_vanaz/"  target="_blank" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/"  target="_blank" class="fab fa-linkedin"></a>
+        <a href="https://www.pinterest.com/"  target="_blank" class="fab fa-pinterest"></a>
+    </div>
+    <div class="credit">
+        <p><a href="#">Điều kiện sử dụng</a><span>- </span> <a href="#"> Thông báo về quyền riêng tư</a> <br>
+         Lựa chọn bảo mật quảng cáo của bạn © 2004-2023, <br> ReadAnyWhere.com, Inc hoặc các chi nhánh của nó</p>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
