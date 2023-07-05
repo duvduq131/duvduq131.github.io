@@ -2381,5 +2381,462 @@ height: auto;
     height: 0;
     background: transparent;
   }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .divleft .Title h3 {
+      font-size: 15px;
+      width: 100px;
+    }
+    .im1{
+      width: 55%;
+      height: 280px;
+      
+    }
+  
+    .im2{
+      width: 35%;
+      height: 280px;
+      margin-right: 10px;
+    }
+    .cardchangeProduct{
+      width: 100%;
+      height:auto;
+     
+    }
+    .order{
+      flex-wrap: wrap;
+    }
+   
+  }
+  
+  
+  
+  /* Thiết kế cho màn hình điện thoại di động */
+  @media (max-width: 767px) {
+    
+    #All .divright .imgintroduce{
+      display: grid;
+    
+   }
+   .im1{
+    width: 90%;
+    height: 280px;
+   
+  }
+  
+  .im2{
+   
+    width: 90%;
+    height: 280px;
+    margin-right: 10px;
+    /* margin-bottom: 330px; */
+    margin-top: 5%;
+  
+  }
+  .divright .divIntro{
+    height:800px;
+  }
+  
+  #All .divleft {
+    float: left;
+    width: 25%;
+    height: 100%;
+  }
+  .divleft .Title h3 {
+    font-size: 15px;
+    width: 100px;
+  }
+  #All .divright{
+    width: calc(100% - 25%); 
+  }
+  }
+  /* details.html */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .imgdetail img{
+      width: 500px;
+    }
+    .inforproduct{
+      max-width: 400px;
+    }
+  }
+  @media (max-width: 767px) {
+    .imgdetail img{
+      width: 400px;
+      height: 400px;
+    }
+    .inforproduct{
+      max-width: 400px;
+      
+    }
+    .backgrounddetail{
+      display: grid;
+    }
+  
+  }
+  /* home.html */
+  
+   /* Thiết kế cho màn hình laptop */
+   @media (min-width: 1024px) {
+    #bar{
+      display: none;
+    }
+  }
+  
+  /* Thiết kế cho màn hình máy tính bảng */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* home */
+    
+      /* thanh header */
+      .hidden {
+        display: none;
+      }
+      
+      .visible {
+        display: block;
+      }
+      
+      .l{
+        display: grid;
+        text-align: center;
+        justify-self: center;
+        margin-left:0%;
+        width: 100%;
+        align-items: center;
+      }
+      #menu.hidden {
+        /* display: block; */
+        position: absolute;
+        z-index: 2;
+        top: 100%;
+        left: 0;
+        background-color: #b1b1b1;
+        padding: 10%;
+        align-items: center;
+        /* display: grid; */
+      } 
+      #menu.hidden li{
+        width: 100%;
+        margin-bottom: 5%;
+      }
+      #menu.hidden li a{
+        
+        color: #000;
+       
+        font-size: 30px;
+      }
+      .overlay{
+        position: absolute;
+        z-index: 0;
+      }
+      .Txt{
+        position: absolute;
+        z-index: 1;
+      }
+      
+      .fun{
+       
+        width: 30%;
+        margin-left: 35%;
+      }
+      .fun a{
+        margin-left: 5%;
+       
+        width: 70%;
+      }
+     
+    
+  
+    /* about */
+    
+    .TxtAbout h2{
+      
+      font-size: 22px;
+     
+      width: 55%;
+    }
+    .TxtAbout .card-about {
+      width: 55%;
+      height: 65%;
+    }
+   
+   .TxtAbout .card-about .card-about-st{
+    display: flex;
+   
+   }
+   .TxtAbout .card-about .card-about-st .stt{
+     background-color: #1a1a1a;
+   }
+   .TxtAbout .card-about .card-about-st .stt-txt {
+      margin-left: 10%;
+     
+   }
+  
+   #about img{
+      width:82%;
+      height: auto;
+     
+   }
+   .TxtCon{
+    height: 10%;
+    }
+     /* CONTACT */
+     #contactus img {
+      width: 60%;
+      border-radius: 0 0  0 0;
+       
+      height: 95%;
+    }
+   
+    .formcontact{
+     width: 100%;
+     
+      height: 85%;
+    }
+    .contactcard{
+      margin-left: 5%;
+    }
+    
+  }
+  
+  /* Thiết kế cho màn hình điện thoại di động */
+  @media (max-width: 767px) {
+    /* CSS cho các thành phần trên màn hình điện thoại di động */
+    /* Ví dụ: chỉnh kích thước, căn chỉnh, font chữ, v.v. */
+    /* .hidden {
+      display: none;
+    }
+  
+    .show {
+      display: block;
+    } */
+  
+   /* home */
+   .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .l{
+    display: grid;
+    text-align: center;
+    justify-self: center;
+    margin-left:0%;
+    width: 100%;
+  }
+  #menu.hidden {
+    /* display: block; */
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+    background-color: #b1b1b1;
+    padding: 10%;
+   
+    /* display: grid; */
+  } 
+  #menu.hidden li{
+    margin-left:0;
+    width: 100%;
+    margin-bottom: 5%;
+    
+  }
+  #menu.hidden li a{
+   
+    color: #000;
+    align-items: center;
+    font-size: 30px;
+  }
+  .overlay{
+    position: absolute;
+    z-index: 0;
+  }
+  .Txt{
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .fun{
+   
+    width: 100%;
+    margin-left: 10%;
+  }
+  .fun a{
+    margin-left: 0%;
+   
+    width: 100%;
+  }
+  
+  
+  
+    /* ABOUT */
+    #about{
+     
+      display: grid;
+     
+    }
+    .TxtAbout{
+      display: grid;
+     
+      position: relative;
+     z-index: 1;
+    }
+    .TxtAbout h2{
+     
+      font-size: 18px;
+     
+      width: 100%;
+    }
+   .TxtAbout .card-about{
+     width: 100%;
+     height: 100%;
+     margin-top: 5%;
+     
+     margin-left: 0px;
+   }
+   .TxtAbout .card-about .card-about-st{
+     display: flex;
+     margin-top: 0%;
+      padding-left: 0%;
+     
+   }
+   .TxtAbout .card-about .card-about-st .stt{
+    margin-left: 5%;
+    background-color: #1a1a1a;
+   }
+   .TxtAbout .card-about .card-about-st .stt-txt h3{
+      
+      margin-left: 5%;
+   }
+   .TxtAbout .card-about .card-about-st .stt-txt p{
+    margin-left: 5%;
+   }
+   #about img{
+      width:80%;
+      height: 100%;
+     margin-top: 5%;
+     z-index: 1;
+     position: relative;
+     margin-left: 10%;
+     
+    right: 0%;
+   }
+    /* CONTACT */
+    #contactus {
+      display: grid;
+     
+    }
+   
+    #contactus img {
+      width: 90%;
+      border-radius: 0 0  0 0;
+     height: 33%;
+    
+    }
+    .contactcard{
+    
+      width: 90%;
+      height: 23%;
+      margin-top: -114%;
+    }
+    .TxtCon h2{
+      
+      color: #ffffff;
+      font-size: 1.5rem;
+  font-weight: 900;
+    }
+    .TxtCon p{
+      color: #ffffff;
+      font-weight: 600;
+    }
+    
+    .formcontact{
+      margin-top: 5%;
+      height: 85%;
+      margin-left: 4%;
+  
+    }
+    .formcontact label{
+      
+      font-size: 20px;
+    }
+    .formcontact input{
+      width: 98%;
+      height: 30px;
+     
+    }
+    .formcontact button{
+      padding: 1%;
+      
+    }
+     /* CONTACT */
+     #contactus {
+      display: grid;
+     
+    }
+   
+    #contactus img {
+      width: 90%;
+      border-radius: 0 0  0 0;
+     height: 33%;
+    
+    }
+    .contactcard{
+    
+      width: 90%;
+      height: 23%;
+      margin-top: -114%;
+    }
+    .TxtCon h2{
+      
+      color: #ffffff;
+      font-size: 1.5rem;
+  font-weight: 900;
+    }
+    .TxtCon p{
+      color: #ffffff;
+      font-weight: 600;
+    }
+    
+    .formcontact{
+      margin-top: 5%;
+      height: 85%;
+      margin-left: 4%;
+  
+    }
+    .formcontact label{
+      
+      font-size: 20px;
+    }
+    .formcontact input{
+      width: 98%;
+      height: 30px;
+     
+    }
+    .formcontact button{
+      padding: 1%;
+      
+    }
+   /* product  */
+   #product h1{
+    margin-top: 11%;
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 4%;
+    margin-left: 2%;
+  }
+  .sphtml a{
+    margin-left: 2%;
+    padding: 10px;
+   margin-top: 10%;
+   font-size: 28px;
+  }
+  /* phongbep.html */
+  .inline{
+     display: grid;
+  }
+  }
+  
   
 
